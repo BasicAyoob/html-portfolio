@@ -1,0 +1,379 @@
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+  background-color: #fff; /* Ensures the navbar is not transparent */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .brand-text {
+  margin-left: 10px; /* Adjust spacing as needed */
+  line-height: 1.2;
+}
+
+.navbar-brand small {
+  font-size: 0.8em; /* Smaller font size for 'Cleanups' */
+  font-weight: normal; /* Less emphasis on 'Cleanups' */
+}
+
+.btn-danger {
+  background-color: #358bdc; /* Specific red for the donate button */
+  border-color: #358bdc;
+}
+
+.btn-danger:hover {
+  background-color: #2623c8; /* Darker red on hover */
+  border-color: #2623c8;
+}
+
+.carousel-item {
+  position: relative; /* Needed to properly position the pseudo-element */
+  height: 450px; /* Adjust this value to fit your design needs */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* This keeps the aspect ratio of the image intact */
+}
+
+.carousel-item::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust the height of the gradient as needed */
+  background: linear-gradient(to top, rgba(0, 123, 255, 0.6) 0%, transparent 100%);
+  z-index: 1; /* Ensures the gradient is above the image but below the text */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 10px; /* Position the caption at the bottom within the gradient area */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px; /* Optional: Rounded corners */
+  text-align: center; /* Centers the text horizontally */
+  font-family: 'Roboto', sans-serif;
+  z-index: 2; /* Ensures the text appears above the gradient */
+}
+
+.carousel-caption h5 {
+  font-size: 36px; /* Larger font size for headings */
+  font-weight: bold;
+  color: white; /* Keeps the text itself white */
+  text-shadow: none; /* Removes the text shadow */
+}
+
+.carousel-caption p {
+  font-size: 16px; /* Adjust as needed */
+  color: white;
+  text-shadow: none; /* Removes the text shadow */
+}
+
+.intro-section {
+  position: relative; /* Keeps the section in the normal document flow */
+  width: 50%; /* Adjusts the width to your preference, say 50% */
+  margin: 20px auto; /* Centers the section horizontally and adds vertical space */
+  text-align: center; /* Ensures the text aligns center within the section */
+  padding: 20px; /* Adds padding around the text for better spacing */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+
+
+.intro-section h2 {
+  color: #333; /* Dark text color for visibility */
+  font-size: 24px; /* Adjust font size as necessary */
+  margin-bottom: 10px; /* Space between the heading and paragraph text */
+}
+
+.intro-section p {
+  color: #666; /* Lighter text color for the paragraph */
+  font-size: 16px; /* Paragraph font size */
+}
+
+.intro-buttons {
+  display: flex; /* Aligns buttons in a flex row */
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 20px; /* Adds space between buttons */
+}
+
+.intro-buttons button {
+  padding: 10px 20px; /* Button padding */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.intro-buttons button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/*contact.html css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0056b3;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.large-image {
+  width: 150%; /* 1.5x its container size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+  color: #0056b3;
+  padding-bottom: 10px;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin-top: 20px;
+  border-top: 5px solid #ccc;
+}
+
+.col-md-6 {
+  margin-bottom: 20px;
+}
+
+/* Responsive Media Queries */
+
+/* Phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .large-image {
+      width: 100%; /* Adjusts size to fit smaller devices */
+  }
+
+  .col-md-6 {
+      margin-bottom: 10px; /* Adjusts spacing */
+  }
+}
+
+/* volunteer CSS*/
+
+/* General styles specific to the volunteer page */
+.volunteer-body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.volunteer-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-container {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-form-control {
+  margin-bottom: 15px;
+}
+
+.volunteer-btn-primary {
+  background-color: #0056b3;
+  border: none;
+}
+
+.volunteer-btn-primary:hover {
+  background-color: #003580;
+}
+
+.volunteer-h1 {
+  color: #0056b3;
+  text-align: center;
+}
+
+.volunteer-p, .volunteer-label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#customPayPalButton {
+  background-image: linear-gradient(to right, #006994, #00b8e6); /* Blue gradient */
+  color: white; /* White text color */
+  border: none; /* No borders */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 24px; /* Padding for size */
+  font-size: 20px; /* Larger font size */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#customPayPalButton:hover {
+  background-image: linear-gradient(to right, #005882, #0096c7); /* Darker blue on hover */
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.appear {
+  opacity: 1;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.large-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.large-image:hover {
+  transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: aqua;
+}
+/* Specific styles for the volunteer page */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-primary:hover {
+  background-color: #004085;
+  border-color: #003769;
+}
+
+/* Enhance form appearance */
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contact Page Specific Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background-color: #0056b3; /* Blue shade for primary buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #003580;
+}
+
+footer {
+  background-color: #f8f9fa; /* Light gray footer */
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.current-year {
+  color: #0056b3; /* Blue color */
+}
+
+
